@@ -2,12 +2,12 @@
 
 trigger:
   branches:
-  - main
+    include:
+      - azure-pipelines
 
 pool:
   vmImage: 'ubuntu-latest'
-  name: ubuntu image
 
 steps:
   - script: echo "Hello World"
-
+    displayName: Print Hello World
