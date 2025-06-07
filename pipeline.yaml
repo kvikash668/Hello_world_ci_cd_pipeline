@@ -1,4 +1,13 @@
 ##This is hello world ci/cd pipeline script##
 
-echo "Hello World"
+trigger:
+  branches:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+  name: ubuntu image
+
+steps:
+  - script: echo "Hello World"
 
