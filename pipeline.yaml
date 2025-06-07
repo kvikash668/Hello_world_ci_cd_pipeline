@@ -1,0 +1,4 @@
+##This is hello world ci/cd pipeline script##
+
+echo "Hello World"
+
